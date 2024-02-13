@@ -2,19 +2,17 @@
 #include <string>
 #include <vector>
 #include "Car.h"
-using namespace std;
 
 class Dealership{
     public:
-        string name;
-        vector<Car> carLot = {};
-        vector<Car> soldCars = {};
+        std::string name = "";
+        std::vector<Car> carLot = {};
+        std::vector<Car> soldCars = {};
         int carCount = 0;
-        void addCar(Car deleteCar);
-        void deleteCar(vector<Car> carlot);
-        Dealership(string dealershipName){
-            this->name = name;
-        
-        }
+        void addCar(Car addedCar);
+        //void deleteCar(int deletedCarId);
+        void printCars();
+        Dealership();
+        Dealership(std::string dealershipName);
 
 };
