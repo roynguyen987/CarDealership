@@ -10,7 +10,7 @@ class Dealership{
         std::vector<Car> soldCars = {};
         int carCount = 0;
         void addCar(Car addedCar);
-        //void deleteCar(int deletedCarId);
+        void deleteCar(int deletedCarId);
         void printCars();
         Dealership();
         Dealership(std::string dealershipName);

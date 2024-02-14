@@ -5,14 +5,19 @@
 #include <string>
 
 class Car {
+private:
+    int id;
+
 public:
     std::string make;
     std::string model;
-    int id;
     int year;
     int price;
     bool used;
     void printCar();
+    void setId(int id);
+    int getId();
+
     Car();
     Car(std::string make, std::string model, int year, int id, int price, bool used);
 };

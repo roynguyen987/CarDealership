@@ -15,6 +15,14 @@ Car::Car(std::string make, std::string model, int year, int id, int price, bool 
     this->used = used;
 }
 
+void Car::setId(int newID){
+    this->id = newID;
+}
+
+int Car::getId(){
+    return this->id;
+}
+
 void Car::printCar() {
     // Implementation of the printCar function
     std::cout << "Make: " << make << std::endl;
